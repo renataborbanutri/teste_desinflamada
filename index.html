@@ -338,17 +338,13 @@
     <div class="result" id="resultado" aria-live="polite"></div>
 
     <div class="promo-text" id="promo-section" style="display: none;">
-      <p>Eu vou te conduzir com jejum + alimentação correta para desinflamar e recuperar seu controle hormonal.</p>
-      <ul>
-        <li>Jejum como <strong>anti-inflamatório natural</strong> — aplicado com segurança e estratégia.</li>
-        <li><strong>Quantidade certa para você</strong>: você vai saber exatamente quanto comer usando a TATA, minha calculadora inteligente que monta suas refeições.</li>
-      </ul>
+
       <a
         id="cta-jejum"
-        href="https://renataborbanutri.github.io/jejum/?utm_source=autoavaliacao&utm_medium=cta_main&utm_campaign=jaf"
+        href="https://renataborbanutri.github.io/vocedesinflamada/"
         target="_blank"
         class="button"
-        aria-label="Quero meu plano para desinflamar com o JAFE"
+        aria-label="Quero meu plano para desinflamar"
       >
         👉 Quero desinflamar agora
       </a>
@@ -364,8 +360,8 @@
     }
 
     function mensagemPonte(nivel) {
-      if (nivel.includes("Leve")) return "";
-      if (nivel.includes("Moderada")) return "";
+      if (nivel.includes("Leves")) return "";
+      if (nivel.includes("Moderadas")) return "";
       return `
         <h2>Consequências de adiar o cuidado:</h2>
         <ul>
@@ -446,18 +442,7 @@
 
         <div class="bridge">${bridgeLabel(nivel) ? `<strong>${bridgeLabel(nivel)}</strong> ` : ""}${ponte}</div>
 
-        <div class="solution">
-          <h4 class="sol-title"><span class="sol-ico" aria-hidden="true">🧭</span>Plano de ação personalizado</h4>
-          <p class="sol-lead">Vamos agir em <strong>3 frentes</strong> para desinflamar e estabilizar hormônios:</p>
-          <ol class="sol-steps" role="list">
-            <li><strong>Jejum estruturado</strong></li>
-            <li><strong>Reset intestinal</strong></li>
-            <li><strong>Prato inteligente</strong> — <em>quantidade certa</em> com a <strong>TATA</strong> (proteína âncora, combinações de macros e janela alimentar).</li>
-          </ol>
-          <h5 class="sol-sub">Ajustes finos para o seu caso</h5>
-          <ul id="plano-ul" class="sol-list"></ul>
-          <p class="assurance">Dentro do JAFE eu te guio na prática — do jejum certo ao prato certo, com segurança, constância e ajustes semanais até seu corpo responder.</p>
-        </div>
+
       `;
 
       const ul = document.getElementById('plano-ul');
